@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>calculation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <script >
+
+        const add = () =>
+        {
+                let firstinput = document.getElementById("input1").value;
+                let secondinput = document.getElementById("input2").value;
+                let addition = parseInt(firstinput) + parseInt(secondinput);
+                 document.getElementById("span").innerText=addition;
+                
+        }
+
+        const sub =() =>
+        {
+                let firstinput = document.getElementById("input1").value;
+                let secondinput = document.getElementById("input2").value;             
+                let addition = parseInt(firstinput) - parseInt(secondinput);
+                 document.getElementById("span").innerText=addition;
+        }
+        
+        const mul = () =>
+        {
+            let firstinput = document.getElementById("input1").value;
+                let secondinput = document.getElementById("input2").value;
+                let addition = parseInt(firstinput) * parseInt(secondinput);
+                 document.getElementById("span").innerText=addition;
+        }
+
+        const div = () =>
+        {
+            let firstinput = document.getElementById("input1").value;
+                let secondinput = document.getElementById("input2").value;
+                let addition = parseInt(firstinput) / parseInt(secondinput);
+                 document.getElementById("span").innerText=addition;
+        }
+    </script>
+</head>
+<body>
+
+    <input id="input1" type="text"  value=" " > <br> <br>
+    <input id="input2" type="text"  value=" " > <br><br>
+    <p1 id = "p1tag">your Answer:-</p1> 
+    <span id = "span"></span><br><br>
+    <button onclick="add();" id="add">+</button>
+    <button onclick="sub();" id="sub">-</button>
+    <button onclick="mul();" id="mul">*</button>
+    <button onclick="div();" id="div">/</button>
+
+    
+    
+</body>
+</html>
